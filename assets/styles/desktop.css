@@ -1,0 +1,96 @@
+@font-face {
+  font-family: SegoeUI;
+  src: url(/assets/fonts/100-light.ttf) format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: SegoeUI;
+  src: url(/assets/fonts/200-semilight.ttf) format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: SegoeUI;
+  src: url(/assets/fonts/400-normal.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: SegoeUI;
+  src: url(/assets/fonts/600-bold.ttf) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: SegoeUI;
+  src: url(/assets/fonts/700-semibold.ttf) format("truetype");
+  font-weight: 700;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  /* box-sizing: border-box; */
+}
+
+body {
+  background-image: url("/assets/images/wallpaper.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.desktop-taskbar {
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.343);
+  backdrop-filter: blur(20px);
+  width: 100vw;
+  height: 54px;
+  display: flex;
+}
+
+.desktop-icons,
+.desktop-tray {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desktop-icons a:hover,
+.desktop-tray a:hover {
+  border-radius: 5px;
+  backdrop-filter: blur(20px);
+}
+
+.desktop-icons a {
+  all: unset;
+  padding: 8px;
+}
+
+.desktop-tray {
+  padding-right: 20px;
+}
+
+.desktop-icons {
+  padding-left: 25px;
+}
+
+.desktop-tray a {
+  all: unset;
+  color: white;
+  user-select: none;
+}
+
+.desktop-tray p {
+  font-family: "SegoeUI", sans-serif;
+  font-weight: 100;
+  text-align: end;
+  user-select: none;
+}
+
+.spacer {
+  flex-grow: 1;
+}
